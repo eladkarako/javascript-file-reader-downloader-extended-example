@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@namespace "http://www.w3.org/1999/xhtml";
+
+*{box-sizing:border-box;}
+
+button,label,input,textarea,form{font:inherit; width:inherit; line-height:inherit; vertical-align:inherit; overflow:display; display:block;}
+html{font-size:20pt; font-family:"Courier New",monospace; line-height:24pt; vertical-align:middle;}
+
+body{overflow:visible;}
+html{overflow:auto; overflow-wrap:break-word; word-break:normal;}
+
+html,body{
+  padding:                               0;
+  margin:                                0;
+  height:                             100%;
+  width:                              100%;
+}
+hr{
+  padding:0;
+  margin:0;
+  background-color:gray;
+  height:4pt;
+  width:100%;
+}
+html{ background-color:lightblue; }
+
+div{  width:100%; height:20pt;  background-color:white; }
+
+div:before{display:block; white-space:pre-wrap; overflow-wrap:break-word; color:green; content:attr(data-info);}
+
+input[type="file"]{height:10%}
+
+button{height:10%;}
+div{height:calc(100% - 8pt - 10% - 10%);}
+html{border:2pt solid gray;}
+
+button:before{display:block; white-space:pre-wrap; overflow-wrap:break-word; content:attr(data-info);}
+button:not([disabled]):before{color:green;}
+button[disabled]:before{      color:gray; }
